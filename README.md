@@ -12,6 +12,14 @@
 
 ## 编写 Dockerfile
 
+### 使用分层来缓存构建过程
+
+### 在构建镜像时使用参数
+
+> 参考 https://docs.docker.com/engine/reference/builder/#arg
+
+### 在运行容器时使用环境变量
+
 ### Use non-root user
 
 ### Use tini
@@ -28,7 +36,7 @@
 
 ### 使用多个docker-compose.yaml文件进行组合
 
-> 参考
+> 参考 https://docs.docker.com/compose/extends/#multiple-compose-files
 
 ### 使用环境变量及其默认值
 
@@ -37,6 +45,8 @@
 #### 定义环境变量及其默认值
 
 #### 使用环境文件
+
+> 参考 https://docs.docker.com/compose/environment-variables/#the-env-file
 
 ### 控制容器的启动顺序
 
@@ -48,11 +58,16 @@
 
 #### 在其他容器成功运行并退出后启动
 
+### 关闭容器并删除容器使用的 volume
+
+```
+docker-compose down -v
+```
+
 ### Build the specified stage as defined inside the Dockerfile
 
 ## Maintain the freshness of Docker image references
 
 > 参考 https://github.com/realestate-com-au/dfresh 
-
 
 ## 镜像的安全
