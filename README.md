@@ -71,3 +71,7 @@ docker-compose down -v
 > 参考 https://github.com/realestate-com-au/dfresh 
 
 ## 镜像的安全
+
+## 在Kubernetes環境下構建鏡像
+
+> 參考 https://github.com/GoogleContainerTools/kaniko
